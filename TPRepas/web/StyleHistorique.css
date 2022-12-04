@@ -1,0 +1,45 @@
+h1{
+    color: darkred;
+    font-family: Bahnschrift;
+    margin-left: 100px;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid darkgray;
+    width: 115px;
+    text-align: center;
+}
+thead{
+    font-family: Bahnschrift;
+    border: 1px solid darkgray;
+    height: 30px;
+    background-color: cadetblue;
+}
+table{
+    border: 1px solid darkgray;
+}
+button{
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin-right: 20px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: #346264;
+}
+li{
+    text-align: left;
+    list-style: none;
+}
+ul{
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    vertical-align: center;
+    margin: none;
+}

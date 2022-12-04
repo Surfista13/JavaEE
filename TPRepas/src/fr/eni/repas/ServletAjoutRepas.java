@@ -18,6 +18,8 @@ public class ServletAjoutRepas extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String date = (String) req.getParameter("daterepas");
-        System.out.println(date);
+        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/historique.jsp");
+        rd.forward(req,resp);
+
     }
 }
