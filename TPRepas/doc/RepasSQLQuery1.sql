@@ -1,0 +1,17 @@
+USE repas_db;
+GO
+
+BEGIN TRAN
+CREATE TABLE repas (
+	idRepas INT PRIMARY KEY IDENTITY(1,1),
+	dateRepas DATE NOT NULL,
+	heureRepas TIME NOt NULL,
+	detailsRepas VARCHAR(100) NOT NULL
+)
+CREATE TABLE aliments (
+ idAliment INT PRIMARY KEY,
+ nomAliment VARCHAR(50) NOT NULL,
+ idRepas INT NOT NULL FOREIGN KEY REFERENCES repas(idRepas)
+)
+COMMIT TRAN
+/*ROLLBACK TRAN*/

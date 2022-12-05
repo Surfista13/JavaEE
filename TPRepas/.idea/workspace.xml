@@ -7,20 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25000634-076e-44e3-bd64-3a91aed7eb8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/StyleAccueil.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/StyleAjoutRepas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/StyleHistorique.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/JavaEE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/RepasSQLQuery1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bll/AlimentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bll/RepasManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bo/Aliment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bo/Repas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/AlimentDAOImplSQLServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/RepasDAOImplSQLServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TPTirAuSort/TPTirAuSort.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPChifoumi/TPChifoumi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPChifoumi/TPChifoumi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPJavaEE/TPJavaEE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPJavaEE/TPJavaEE.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TPRepas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TPRepas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TPRepas_war_exploded/WEB-INF/classes/fr/eni/repas/ServletAccueil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/TPRepas_war_exploded/WEB-INF/historique.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TPRepas_war_exploded/WEB-INF/historique.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletAjoutRepas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/ServletAjoutRepas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPRepas/fr/eni/repas/ServletAccueil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletAccueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletAccueil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletAjoutRepas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletAjoutRepas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletVisualisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletVisualisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/ajoutRepas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/ajoutRepas.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/historique.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/historique.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +52,8 @@
       <list>
         <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,18 +71,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IMbLFLaGt0nY2MdnOLH6jb4bL5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Apps/apache-tomcat-8.5.23/lib",
+    "last_opened_file_path": "C:/Users/bgonzalez2022/Desktop/GitRepo/Tachan/TachanV0/src/fr/eni/tachan/bo/Game.java",
     "list.type.of.created.stylesheet": "CSS",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
@@ -69,7 +94,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.eni.repas.dal" />
+      <recent name="fr.eni.repas.bo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bgonzalez2022\Desktop\GitRepo\JavaEE\JavaEE\TPRepas\doc" />
       <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\web" />
       <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\web\WEB-INF" />
       <recent name="C:\Users\bgonzalez2022\Desktop\GitRepo\JavaEE\TPRepas\web\WEB-INF" />
@@ -182,6 +212,7 @@
       <updated>1669994343153</updated>
       <workItem from="1669994344405" duration="3873000" />
       <workItem from="1670013900008" duration="6801000" />
+      <workItem from="1670228153668" duration="17366000" />
     </task>
     <servers />
   </component>
@@ -198,5 +229,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

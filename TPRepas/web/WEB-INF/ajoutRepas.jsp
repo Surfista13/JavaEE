@@ -8,15 +8,15 @@
 <body>
     <h1>AJOUT REPAS</h1>
     <form method="post" action="/TPRepas/ServletAjoutRepas">
-        <label class="date">date</label>
+        <label for="date" class="date">date</label>
         <input type="date" name="daterepas" id="date" required>
         </br>
-        <label>heure</label>
+        <label for="time">heure</label>
         <input type="time" name="timerepas" id="time" required>
         </br>
         <div class="details">
-            <label>repas</label>
-            <textarea rows="5" cols="60" name="repas" placeholder="Saisir aliment avec une virgule"></textarea>
+            <label for="details">repas</label>
+            <textarea rows="5" cols="60" name="repas" placeholder="Saisir aliment avec une virgule" id="details"></textarea>
             </br>
         </div>
         <div class="bouton">

@@ -17,8 +17,8 @@
     </thead>
     <tbody>
       <tr>
-        <td>08/12/2022</td>
-        <td>12h30</td>
+        <td><%=request.getAttribute("date")%></td>
+        <td><%=request.getAttribute("time")%></td>
         <td><a href="#">détails</a></td>
       </tr>
       <tr>
