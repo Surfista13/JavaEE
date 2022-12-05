@@ -3,16 +3,22 @@ package fr.eni.repas.bo;
 public class Aliment {
 
     int idAliments = 0;
-    int idRepas = 0;
     String nomAliment = "";
     Repas repas;
 
     public Aliment() {
         repas.ajoutAliment(this);
     }
-    public Aliment(String nomAliment, int idRepas) {
+
+    public Aliment(String nomAliment) {
+        this();
         this.nomAliment = nomAliment;
-        this.idRepas = idRepas;
+    }
+
+    public Aliment(String nomAliment, Repas repas) {
+        this.nomAliment = nomAliment;
+        this.repas = repas;
+        repas.ajoutAliment(this);
     }
 
     public int getIdAliments() {
@@ -23,13 +29,6 @@ public class Aliment {
         this.idAliments = idAliments;
     }
 
-    public int getIdRepas() {
-        return idRepas;
-    }
-
-    public void setIdRepas(int idRepas) {
-        this.idRepas = idRepas;
-    }
 
     public String getNomAliment() {
         return nomAliment;
@@ -51,7 +50,6 @@ public class Aliment {
     public String toString() {
         final StringBuffer sb = new StringBuffer("Aliment{");
         sb.append("idAliments=").append(idAliments);
-        sb.append(", idRepas=").append(idRepas);
         sb.append(", nomAliment='").append(nomAliment).append('\'');
         sb.append(", repas=").append(repas);
         sb.append('}');

@@ -6,10 +6,9 @@ CREATE TABLE repas (
 	idRepas INT PRIMARY KEY IDENTITY(1,1),
 	dateRepas DATE NOT NULL,
 	heureRepas TIME NOt NULL,
-	detailsRepas VARCHAR(100) NOT NULL
 )
 CREATE TABLE aliments (
- idAliment INT PRIMARY KEY,
+ idAliment INT PRIMARY KEY IDENTITY(1,1),
  nomAliment VARCHAR(50) NOT NULL,
  idRepas INT NOT NULL FOREIGN KEY REFERENCES repas(idRepas)
 )

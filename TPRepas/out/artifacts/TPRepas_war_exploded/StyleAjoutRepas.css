@@ -1,0 +1,43 @@
+h1{
+    color: darkred;
+    font-family: Bahnschrift;
+    margin-left: 100px;
+}
+
+label{
+    font-family: Bahnschrift;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+input{
+    margin-top: 20px;
+}
+textarea{
+    vertical-align:text-top;
+}
+form{
+    padding: 20px;
+    text-align: left;
+}
+.details{
+    margin-top: 20px;
+}
+.date{
+    margin-right: 20px;
+}
+.bouton{
+    margin-left: 55px;
+}
+.bouton input {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-right: 30px;
+}
+.bouton input:hover{
+    background-color: #346264;
+}

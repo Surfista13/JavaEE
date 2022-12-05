@@ -10,15 +10,22 @@ public class Repas {
     LocalTime time;
 
     List<Aliment> aliments;
+    int idRepas = 0;
 
     public Repas() {
-        aliments = new ArrayList<Aliment>();
+        this.aliments = new ArrayList<>();
     }
 
     public Repas(LocalDate date, LocalTime time) {
-        this();
+        this.aliments = new ArrayList<>();
         this.date = date;
         this.time = time;
+    }
+    public Repas(int idRepas,LocalDate date, LocalTime time) {
+        this.aliments = new ArrayList<>();
+        this.date = date;
+        this.time = time;
+        this.idRepas = idRepas;
     }
 
     public LocalDate getDate() {
@@ -53,7 +60,6 @@ public class Repas {
         final StringBuffer sb = new StringBuffer("Repas{");
         sb.append("date=").append(date);
         sb.append(", time=").append(time);
-        sb.append(", aliments=").append(aliments);
         sb.append('}');
         return sb.toString();
     }

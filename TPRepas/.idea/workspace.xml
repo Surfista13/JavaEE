@@ -7,39 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25000634-076e-44e3-bd64-3a91aed7eb8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/JavaEE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/RepasSQLQuery1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bll/AlimentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bll/RepasManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bo/Aliment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/bo/Repas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/AlimentDAOImplSQLServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/RepasDAOImplSQLServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TPTirAuSort/TPTirAuSort.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPChifoumi/TPChifoumi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPChifoumi/TPChifoumi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPJavaEE/TPJavaEE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPJavaEE/TPJavaEE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_11_2_0_jre11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/insert aliments.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/insert repas.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/ConnectionProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/testunitaires/ServletTestBLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/testunitaires/ServletTestCnx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/testunitaires/ServletTestDAL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/repas/testunitaires/TestBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mssql-jdbc-11.2.0.jre11.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPJavaEE/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPJavaEE/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TPRepas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TPRepas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TPRepas_war_exploded/WEB-INF/classes/fr/eni/repas/ServletAccueil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/RepasSQLQuery1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/RepasSQLQuery1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/TPRepas_war_exploded/WEB-INF/historique.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TPRepas_war_exploded/WEB-INF/historique.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TPRepas/fr/eni/repas/ServletAccueil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletAccueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletAccueil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletAjoutRepas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletAjoutRepas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/ServletVisualisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletVisualisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/ajoutRepas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/ajoutRepas.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/bo/Aliment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/bo/Aliment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/bo/Repas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/bo/Repas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletVisualisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/controleurs/ServletVisualisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/repas/dal/RepasDAOImplSQLServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/repas/dal/RepasDAOImplSQLServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/historique.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/historique.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/bgonzalez2022/Desktop/GitRepo/Tachan/TachanV0/src/fr/eni/tachan/bo/Game.java",
+    "last_opened_file_path": "C:/Users/BRUNO GARCIA/Desktop/GITHUB/JavaSE/TPLibrairie/src/fr/eni/librairie/dal/ArticleDAOJdbcImpl.java",
     "list.type.of.created.stylesheet": "CSS",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
@@ -98,11 +84,19 @@
       <recent name="fr.eni.repas.dal" />
       <recent name="fr.eni.repas.bo" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\web\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bgonzalez2022\Desktop\GitRepo\JavaEE\JavaEE\TPRepas\doc" />
-      <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\web" />
+      <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\doc" />
+      <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\web\META-INF" />
+      <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\src\fr\eni\repas\dal" />
       <recent name="C:\Users\BRUNO GARCIA\Desktop\GITHUB\JavaEE\TPRepas\web\WEB-INF" />
-      <recent name="C:\Users\bgonzalez2022\Desktop\GitRepo\JavaEE\TPRepas\web\WEB-INF" />
+      <recent name="C:\Users\bgonzalez2022\Desktop\GitRepo\JavaEE\JavaEE\TPRepas\doc" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.eni.repas.testunitaires" />
+      <recent name="fr.eni.repas.controleurs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,7 +106,46 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.23">
+    <configuration name="TestBO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.eni.repas.testunitaires.TestBO" />
+      <module name="TPRepas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.eni.repas.testunitaires.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConnexion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.eni.repas.testunitaie.TestConnexion" />
+      <module name="TPRepas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.eni.repas.testunitaires.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDAL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.eni.repas.testunitaires.TestDAL" />
+      <module name="TPRepas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.eni.repas.testunitaires.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.23" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.23" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -201,6 +234,13 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestDAL" />
+        <item itemvalue="Application.TestBO" />
+        <item itemvalue="Application.TestConnexion" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -213,6 +253,7 @@
       <workItem from="1669994344405" duration="3873000" />
       <workItem from="1670013900008" duration="6801000" />
       <workItem from="1670228153668" duration="17366000" />
+      <workItem from="1670261019739" duration="11834000" />
     </task>
     <servers />
   </component>
@@ -232,5 +273,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="javax.naming.NoInitialContextException" package="javax.naming" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

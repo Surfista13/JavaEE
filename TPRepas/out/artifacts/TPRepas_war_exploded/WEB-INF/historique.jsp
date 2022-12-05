@@ -1,3 +1,6 @@
+<%@ page import="fr.eni.repas.bo.Repas" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.time.format.DateTimeFormatter" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -17,28 +20,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><%=request.getAttribute("date")%></td>
-        <td><%=request.getAttribute("time")%></td>
+        <%
+          DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd/MM/uuuu");
+          List<Repas> listeRepas = (List<Repas>)request.getAttribute("listeRepas");
+          for(Repas repas : listeRepas) {
+            String dateText = repas.getDate().format(formatters);
+        %>
+        <td><%=dateText%></td>
+        <td><%=repas.getTime()%></td>
         <td><a href="#">détails</a></td>
       </tr>
-      <tr>
-        <td class="details" colspan="3">
-          <ul>
-            <li>Aliment 1</li>
-            <li>Aliment 2</li>
-            <li>Aliment 3</li>
-            <li>Aliment 4</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>08/12/2022</td>
-        <td>12h30</td>
-        <td><a href="#">détails</a></td>
-      </tr>
+        <%
+          }
+        %>
     </tbody>
-
   </table>
+
   </br>
   <a href="/TPRepas/ServletAjoutRepas"><button>Ajouter un nouveau repas</button></a>
   <a href="/TPRepas/ServletAccueil"><button>Retour à l'accueil</button></a>

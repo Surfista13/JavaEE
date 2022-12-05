@@ -2,6 +2,14 @@ package fr.eni.repas.dal;
 
 import fr.eni.repas.bo.Repas;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RepasDAOImplSQLServer implements DAO<Repas> {
@@ -13,7 +21,25 @@ public class RepasDAOImplSQLServer implements DAO<Repas> {
 
     @Override
     public List<Repas> selectAll() {
-        return null;
+        List<Repas> desRepas= new ArrayList<>();
+        Statement stmt;
+        Connection cnx;
+        ResultSet rs;
+
+        try {
+            cnx = ConnectionProvider.getConnection();
+            stmt = cnx.createStatement();
+            rs = stmt.executeQuery(SELECTALL);
+            while (rs.next()){
+                Repas repas = new Repas();
+                repas.setDate(rs.getDate("dateRepas").toLocalDate());
+                repas.setTime(rs.getTime("heureRepas").toLocalTime());
+                desRepas.add(repas);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return desRepas;
     }
 
     @Override

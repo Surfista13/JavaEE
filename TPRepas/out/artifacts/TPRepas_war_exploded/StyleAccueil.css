@@ -1,0 +1,18 @@
+h1{
+    color: darkred;
+    font-family: Bahnschrift;
+    margin-left: 100px;
+}
+button{
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border: none;
+    margin-right: 20px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: #346264;
+}
