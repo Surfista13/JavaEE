@@ -9,7 +9,7 @@
     <h1>ACCUEIL</h1>
     </br>
     </br>
-    <a href="/TPRepas/ServletVisualisation"><button>Visualiser les repas</button></a>
+    <a href="/TPRepas/ServletVisualisation?idRepas=0"><button>Visualiser les repas</button></a>
     <a href="/TPRepas/ServletAjoutRepas"><button>Ajout repas</button></a>
   </body>
 </html>

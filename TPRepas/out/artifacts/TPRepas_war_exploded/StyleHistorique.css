@@ -2,6 +2,7 @@ h1{
     color: darkred;
     font-family: Bahnschrift;
     margin-left: 100px;
+    padding-bottom: 0px;
 }
 
 td{
@@ -42,4 +43,7 @@ ul{
     justify-content: space-around;
     vertical-align: center;
     margin: none;
+}
+body{
+    margin-bottom: 30px;
 }
