@@ -10,6 +10,6 @@ public abstract class DAOFactory {
 
 
     public static DAO<Aliment> getAlimentDAO() {
-        return new AlimentDAOImplSQLServer();
+        return null;
     }
 }

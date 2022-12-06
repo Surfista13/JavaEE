@@ -14,22 +14,20 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
-@WebServlet(value = "/ServletTestDAL")
-public class ServletTestDAL extends HttpServlet {
+@WebServlet(value = "/ServletTestDALInsertAliments")
+public class ServletTestDALInsertAliments extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
+        int key;
         try{
         Connection cnx = ConnectionProvider.getConnection();
             DAO<Repas> repasDAO =  DAOFactory.getRepasDAO();
-            List<Repas> desRepas = new ArrayList<>();
-            desRepas = repasDAO.selectAll();
-            for (Repas repas : desRepas){
-                out.print("Test selectall: " + repas + "\n");
-            }
+            repasDAO.insertAliment("Choux",3);
+            out.print("Test insertAliment OK");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

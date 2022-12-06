@@ -1,6 +1,7 @@
 <%@ page import="fr.eni.repas.bo.Repas" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.time.format.DateTimeFormatter" %>
+<%@ page import="fr.eni.repas.bo.Aliment" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -23,13 +24,32 @@
         <%
           DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd/MM/uuuu");
           List<Repas> listeRepas = (List<Repas>)request.getAttribute("listeRepas");
+          List<Aliment> aliments = (List<Aliment>) request.getAttribute("listeAliments");
           for(Repas repas : listeRepas) {
             String dateText = repas.getDate().format(formatters);
         %>
         <td><%=dateText%></td>
         <td><%=repas.getTime()%></td>
-        <td><a href="#">détails</a></td>
+        <td><a href="/TPRepas/ServletVisualisation?idRepas=<%=repas.getIdRepas()%>">détails</a></td>
       </tr>
+        <%if(repas.getIdRepas() == (int)request.getAttribute("idRecherche")){
+          %>
+          <tr>
+            <td colspan="3">
+              <ul>
+                <%for(Aliment aliment : aliments) {
+                %>
+                <li><%=aliment.getNomAliment()%></li>
+                <%
+                  }
+                %>
+              </ul>
+
+            </td>
+          </tr>
+        <%
+        }
+        %>
         <%
           }
         %>

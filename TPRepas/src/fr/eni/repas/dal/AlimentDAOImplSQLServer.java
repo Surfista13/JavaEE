@@ -1,4 +1,4 @@
-package fr.eni.repas.dal;
+/*package fr.eni.repas.dal;
 
 import fr.eni.repas.bo.Aliment;
 
@@ -25,3 +25,4 @@ public class AlimentDAOImplSQLServer implements DAO<Aliment> {
 
     }
 }
+*/

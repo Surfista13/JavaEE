@@ -12,9 +12,8 @@ public class TestBO {
         LocalTime t1 = LocalTime.now();
         Repas r1 = new Repas(1,d1,t1);
         System.out.println(r1);
-        Aliment a1 = new Aliment("Carotte",r1);
+        Aliment a1 = new Aliment("Carotte",1);
         System.out.println(a1);
         System.out.println(r1);
-        System.out.println(r1.getAliments());
     }
 }

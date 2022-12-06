@@ -14,7 +14,6 @@ public class AlimentManager {
     private List<Aliment> aliments = new ArrayList<>();
 
 
-
     //Constructeur qui instancie ma DAO et DAO factory
     public AlimentManager() {
         daoAliment = DAOFactory.getAlimentDAO();
@@ -22,23 +21,12 @@ public class AlimentManager {
     }
 
     //Singleton
-    public AlimentManager getAlimentManager () {
-        if(alimentManager == null){
+    public AlimentManager getAlimentManager() {
+        if (alimentManager == null) {
             alimentManager = new AlimentManager();
         }
         return alimentManager;
     }
-    //Méthode select all
-    public List<Aliment> findAll(){
-        return aliments;
-    }
-    //Méthode select by id
-    public Aliment findID (){
-        return null;
-    }
-
-    //Méthode insert
-    public void insert(){
-
-    }
 }
+    //Méthode select all
+

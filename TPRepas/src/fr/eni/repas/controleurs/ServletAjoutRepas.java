@@ -1,5 +1,8 @@
 package fr.eni.repas.controleurs;
 
+import fr.eni.repas.bll.RepasManager;
+import fr.eni.repas.bo.Repas;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -9,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -32,17 +36,25 @@ public class ServletAjoutRepas extends HttpServlet {
         String dateText = localDate.format(formatters);
 
        //formatage liste aliments
-        String repas = req.getParameter("repas");
-        String desRepas [] = repas.split(",");
-
-
-
+        String repas = req.getParameter("aliments");
+        String desAliments [] = repas.split(",");
 
         req.setAttribute("date",dateText);
         req.setAttribute("time",localTime);
 
+        RepasManager rm = new RepasManager();
+        List<Repas> desRepas = new ArrayList<>();
+        desRepas = rm.findAll();
+        req.setAttribute("listeRepas",desRepas);
+        req.setAttribute("idRecherche",0);
+
+
+        int key = rm.Add(localDate,localTime);
+
+        for (String a : desAliments){
+            rm.AddAliments(a,key);
+        }
         RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/historique.jsp");
         rd.forward(req,resp);
-
     }
 }

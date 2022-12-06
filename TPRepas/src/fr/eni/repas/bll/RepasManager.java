@@ -1,9 +1,12 @@
 package fr.eni.repas.bll;
 
+import fr.eni.repas.bo.Aliment;
 import fr.eni.repas.bo.Repas;
 import fr.eni.repas.dal.DAO;
 import fr.eni.repas.dal.DAOFactory;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +15,7 @@ public class RepasManager {
     private static RepasManager repasManager;
     private DAO <Repas> repasDAO;
     private List<Repas> desRepas = new ArrayList();
+    private List<Aliment> aliments = new ArrayList<>();
 
     private Repas repas;
 
@@ -36,17 +40,18 @@ public class RepasManager {
     public List<Repas> findAll() {
         return desRepas;
     }
-
-    //Méthode select par id
-    public Repas findID(int id){
-        repas = repasDAO.selectbyID(id);
-        return null;
+    public List<Aliment> findID(int id){
+        aliments = repasDAO.selectbyID(id);
+        return aliments;
     }
+
     //insert
-    public void Add (Repas repas){
-        repasDAO.insert(repas);
+    public int Add (LocalDate date, LocalTime time){
+        int id = repasDAO.insert(date,time);
+        return id;
     }
 
-
-
+    public void AddAliments (String nom,int idRepas){
+        repasDAO.insertAliment(nom,idRepas);
+    }
 }

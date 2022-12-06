@@ -48,6 +48,14 @@ public class Repas {
         return aliments;
     }
 
+    public int getIdRepas() {
+        return idRepas;
+    }
+
+    public void setIdRepas(int idRepas) {
+        this.idRepas = idRepas;
+    }
+
     public void setAliments(List<Aliment> aliments) {
         this.aliments = aliments;
     }
@@ -58,6 +66,7 @@ public class Repas {
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Repas{");
+        sb.append("id=").append(idRepas);
         sb.append("date=").append(date);
         sb.append(", time=").append(time);
         sb.append('}');

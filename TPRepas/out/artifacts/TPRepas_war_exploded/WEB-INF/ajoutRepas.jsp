@@ -16,7 +16,7 @@
         </br>
         <div class="details">
             <label for="details">repas</label>
-            <textarea rows="5" cols="60" name="repas" placeholder="Saisir aliment avec une virgule" id="details"></textarea>
+            <textarea rows="5" cols="60" name="aliments" placeholder="Saisir aliment avec une virgule" id="details" required></textarea>
             </br>
         </div>
         <div class="bouton">

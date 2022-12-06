@@ -1,6 +1,7 @@
 package fr.eni.repas.controleurs;
 
 import fr.eni.repas.bll.RepasManager;
+import fr.eni.repas.bo.Aliment;
 import fr.eni.repas.bo.Repas;
 
 import javax.servlet.*;
@@ -18,7 +19,17 @@ public class ServletVisualisation extends HttpServlet {
         RepasManager rm = new RepasManager();
         desRepas = rm.findAll();
         request.setAttribute("listeRepas",desRepas);
+
+        if(request.getParameter("idRepas") != null){
+            List< Aliment> aliments = new ArrayList<>();
+            int idRepas = Integer.parseInt(request.getParameter("idRepas"));
+            aliments = rm.findID(idRepas);
+            request.setAttribute("listeAliments",aliments);
+            request.setAttribute("idRecherche",idRepas);
+        }
+
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/historique.jsp");
         rd.forward(request,response);
+
     }
 }
